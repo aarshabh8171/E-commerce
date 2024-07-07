@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product">
+            <div class="product-image">
+                <img src="https://www.vedantcomputers.com/image/cache/catalog/assets/product/gigabyte/graphics-card/gv-n4090gaming-oc-24gd/gv-n4090gaming-oc-24gd-1-550x550.JPG" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h1>Product Name</h1>
+                <p class="price">Rs. 1,58,000</p>
+                <p class="description">This is a great product that you will love!</p>
+                <button class="cta" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-commerce Site. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
